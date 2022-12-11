@@ -1,0 +1,100 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+  width: 90vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dataEnter {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.dataEnter label {
+  width: 320px;
+  display: flex;
+  justify-content: space-between;
+}
+.dataEnter input {
+  border: none;
+  background-color: rgba(0, 0, 0, 0.212);
+  border-bottom: 2px solid blue;
+  margin-bottom: 10px;
+  font-size: 17px;
+  padding: 2px;
+  width: 200px;
+}
+.dataEnter .inpQuantity,
+.dataEnter .inpCosts {
+  width: 100px;
+}
+.dataEnter .btnName {
+  border: none;
+  background-color: green;
+  font-size: 16px;
+  color: white;
+  width: 200px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.infoBlockData {
+  background-color: rgba(0, 128, 0, 0.199);
+  margin-top: 20px;
+  font-size: 18px;
+  padding: 10px;
+}
+.infoBlockDataElem {
+  margin-bottom: 20px;
+  display: flex;
+}
+.infoBlockDataElem .costs, .infoBlockDataElem .elem {
+  margin-left: 10px;
+  font-weight: 700;
+}
+.infoBlockData .quantityTbl {
+  display: flex;
+}
+
+.dataInfo {
+  width: 60%;
+}
+
+th,
+td {
+  width: 200px;
+}
+
+.dataElem {
+  background-color: rgba(0, 60, 255, 0.219);
+  font-size: 20px;
+}
+
+@media (max-width: 992px) {
+  .container {
+    margin: 0 auto;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .dataInfo {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */

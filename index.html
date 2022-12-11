@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Кладовка</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="dataEnter">
+        <label>
+          Наименование
+          <input class="inpName" type="text" />
+        </label>
+        <label>
+          Колличество
+          <input class="inpQuantity" type="number" />
+        </label>
+
+        <label>
+          Цена
+          <input class="inpCosts" type="number" />
+        </label>
+
+
+        <button class="btnName">Добавить </button>
+        <div class="infoBlockData">
+            <div class="infoBlockDataElem">
+                Общая стоимость
+                <div class="costs"></div>
+            </div>
+            <div class="infoBlockDataElem">
+                Колличество единиц
+                <div class="elem"></div>
+            </div>
+           
+        </div>
+      </div>
+      <div class="dataInfo">
+    
+        <table>
+          <tr>
+            <th>№ п/п</th>
+            <th>Наименование</th>
+            <th>Колл-во шт.</th>
+            <th>Цена, руб.</th>
+          </tr>
+        </table>
+
+        <table class="dataTable"></table>
+       
+      </div>
+   
+    </div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
